@@ -10,3 +10,8 @@ font-family: 'Roboto', sans-serif;
     align-items: center;
     padding: auto 10px;
 }
+.course-text{
+    display: flex;
+    align-items: center;
+    
+}
