@@ -13,7 +13,7 @@
   </head>
   <body>
     <header class="container">
-      <nav class="navbar navbar-expand-lg bg-light">
+      <nav class="navbar fixed-top navbar-expand-lg bg-light">
         <div class="container-fluid">
           <a class="navbar-brand fs-2 fw-semibold text-white btn btn-success" href="#">Ed Tech</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,16 +25,16 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#courses">Courses</a>
+                <a class="nav-link active" href="#courses">Courses</a>
               </li>              
               <li class="nav-item">
-                <a class="nav-link" href="#about-us">About Us</a>
+                <a class="nav-link active" href="#about-us">About Us</a>
               </li>              
               <li class="nav-item">
-                <a class="nav-link" href="#faq">FAQ</a>
+                <a class="nav-link active" href="#faq">FAQ</a>
               </li>              
               <li class="nav-item">
-                <a class="nav-link" href="#sign-up">Sign Up</a>
+                <a class="nav-link active" href="#sign-up">Sign Up</a>
               </li>              
             </ul>
             <form class="d-flex" role="search">
@@ -56,7 +56,7 @@
               <img src="images/cover/cover-1.png" class="d-block w-100 opacity-25" alt="...">
               <div class="carousel-caption car-caption">
                 <div>
-                <h5 class="fs-2 fw-semibold">Welcome To The Digital Learning Platform</h5>
+                <h5 class="fs-3 fw-semibold">Welcome To The Digital Learning Platform</h5>
                 <p>Digital learning platforms have the potential to be an effective learning tool for students at many levels of education.</p>
                 <button class="btn btn-success">Explore</button>
                 </div>
@@ -66,7 +66,7 @@
               <img src="images/cover/cover-2.jpg" class="d-block w-100 opacity-25" alt="...">
               <div class="carousel-caption car-caption">
                 <div>
-                <h5 class="fs-2 fw-semibold">Welcome To The Digital Learning Platform</h5>
+                <h5 class="fs-3 fw-semibold">Welcome To The Digital Learning Platform</h5>
                 <p>Digital learning platforms have the potential to be an effective learning tool for students at many levels of education.</p>
                 <button class="btn btn-success">Explore</button>
                 </div>
@@ -76,7 +76,7 @@
               <img src="images/cover/cover-3.jpg" class="d-block w-100 opacity-25" alt="...">
               <div class="carousel-caption car-caption">
                 <div>
-                  <h5 class="fs-2 fw-semibold">Welcome To The Digital Learning Platform</h5>
+                  <h5 class="fs-3 fw-semibold">Welcome To The Digital Learning Platform</h5>
                   <p>Digital learning platforms have the potential to be an effective learning tool for students at many levels of education.</p>
                   <button class="btn btn-success">Explore</button>
                 </div>
@@ -99,14 +99,14 @@
         <h1>Grab our <span class="text-success">best</span> courses</h1>
       <p>Millions of people are learning from Ed Tech. Choose the right one for you.</p>
       </div>
-      <section class="row row-cols-1 row-cols-lg-2 gy-5">
+      <section class="container row row-cols-1 row-cols-lg-2 gy-5" id="courses">
         <div class="">
-          <div class="card mb-3" style="max-width: 540px;">
+          <div class="course card mb-3" style="max-width: 540px;">
             <div class="row g-0">
               <div class="col-md-4">
                 <img src="images/course/course-1.png" class="img-fluid rounded-start" alt="...">
               </div>
-              <div class="col-md-8">
+              <div class="col-md-8 c-body">
                 <div class="card-body">
                   <h5 class="card-title">Fundamental Of UI/UX Design</h5>
                   <p class="card-text">Everything you need to became a job-ready UI designer.</p>
@@ -148,7 +148,7 @@
             </div>
           </div>
         </div>        
-        <div class="">
+        <div class="course-hidden">
           <div class="card mb-3" style="max-width: 540px;">
             <div class="row g-0">
               <div class="col-md-4">
@@ -164,7 +164,7 @@
             </div>
           </div>
         </div>        
-        <div class="">
+        <div class="course-hidden">
           <div class="card mb-3" style="max-width: 540px;">
             <div class="row g-0">
               <div class="col-md-4">
@@ -180,7 +180,7 @@
             </div>
           </div>
         </div>        
-        <div class="">
+        <div class="course-hidden">
           <div class="card mb-3" style="max-width: 540px;">
             <div class="row g-0">
               <div class="col-md-4">
@@ -196,20 +196,42 @@
             </div>
           </div>
         </div> 
-        <div class="container text-center"><button class="btn btn-success">Find All</button></div>     
+        <div class="find-all-btn container text-center"><button class="btn btn-success">Find All</button></div>     
       </section>
-      <section class="container p-5 gy-5">
+      <section class="container p-5 gy-5" id="sign-up">
         <div class="d-flex align-items-center justify-content-around bg-success p-5">
           <div>
             <h3>Ready to join?</h3>
             <p>Joing is super easy. It takes a minute</p>
           </div>
           <div>
-            <a href=""><button class="btn btn-success">Register Now</button></a>
+            <!-- Button trigger modal -->
+<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Register Now
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button>
+      </div>
+    </div>
+  </div>
+</div>
           </div>
         </div>
       </section>
-      <section class="container text-center">
+      <section class="container text-center" id="faq">
         <div>
           <h1>Frequently Asked Qustions</h1>
         <p>Most common questions are answered here. Hopefully your queres are also there. If not, no worries, register and submit your queries.</p>
@@ -265,7 +287,7 @@
           </div>
         </div>
       </section>
-      <section class="my-5 d-{sm,md}-none d-{lg,xl,xxl}-block company">
+      <section class="my-5 d-{sm,md}-none d-{lg,xl,xxl}-block company" id="about-us">
         <h1 class="text-center mb-3">Trusted by over 800+ companies</h1>
         <div class="d-flex justify-content-around m-5">
           <div><a href=""><img src="images/company/company-1.png" alt=""></a></div>
